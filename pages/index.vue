@@ -1,6 +1,14 @@
 <template>
-  <div class="wow">
-    <img src="/img/home-lions.png" />
+  <div>
+    <div class="m-3 flex justify-center">
+      <img class="mr-2" src="/favicon/android-chrome-192x192.png" />
+      <div class="border-l-2 border-s-slate-900 mt-6 mb-3">
+        <p class="pl-7 pt-6 -mb-3 font-afrik font-bold text-6xl tracking-wide afrik-orange">AFRIK HUB</p>
+        <p class="pl-7 font-sans font-medium text-4xl tracking-wider subpixel-antialiased">TOURS AND TRAVEL</p>
+        <p class="pl-16 -mt-1 font-serif font-thin text-xl tracking-wider subpixel-antialiased afrik-orange">- Dream, Explore, Discover -</p>
+      </div>
+    </div>
+    <img class="w-auto pt-2" src="/img/home-lions.png" />
   </div>
 </template>
 
@@ -11,12 +19,7 @@
 </script>
 
 <style scoped>
-.wow {
-  width: 1728px;
-  height: 740px;
-  left: 0px;
-  top: 0px;
-  will-change: transform;
-  transform: translate3d(0px, 100px, 0px);
-}
+.afrik-orange {
+    color: #F4941C;
+  }
 </style>

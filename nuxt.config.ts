@@ -25,6 +25,19 @@ export default defineNuxtConfig({
           type: 'image/x-icon',
         },
         {
+          rel: 'preconnect',
+          href: 'https://fonts.googleapis.com',
+        },
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.gstatic.com',
+          crossorigin: '',
+        },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap',
+        },
+        {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/icon?family=Material+Icons',
         },
@@ -35,7 +48,13 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
   ],
-  tailwindcss: {
-    cssPath: '~/assets/css/tailwind.css',
+  css: [
+    '~/assets/css/main.css'
+  ],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
   },
 })

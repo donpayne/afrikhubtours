@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Tours</h2>
+    <h2 class="mb-20 text-4xl">Tours</h2>
     <div class="grid grid-cols-4 gap-5">
       <div v-for="tour in tours">
         <TourCard :tour="tour"/>
@@ -10,10 +10,6 @@
 </template>
 
 <script setup>
-  definePageMeta({
-    layout: 'default',
-  });
-
   const tours = [
     {
       id: 'gorillas',
@@ -28,14 +24,12 @@
       image: './img/chettahs.png',
     },
   ];
+
+  useHead({
+    title: 'AfrikHubTours | Tours',
+  });
 </script>
 
 <style scoped>
-h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-p {
-  margin: 20px 0;
-}
+
 </style>

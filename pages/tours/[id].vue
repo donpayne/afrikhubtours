@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-  const { tour_id } = useRoute().params;
+  const { id } = useRoute().params;
   const tours = [
     {
       id: 'gorillas',
@@ -20,25 +20,23 @@
       image: '../img/chettahs.png',
     },
   ];
-  const tour = tours.find(t => t.id === tour_id);
+  const tour = tours.find(t => t.id === id);
   if (tour === undefined) {
     throw createError({
       statusCode: 404,
       statusMessage: 'Tour page not found!',
+      fatal: true,
     })
   }
 
-  definePageMeta({
-    layout: 'default',
+  useHead({
+    title: `AfrikHubTours | ${ tour.title }`,
+    meta: [
+      { name: 'description', content: `${ tour.description }`},
+    ],
   });
 </script>
 
 <style scoped>
-h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-p {
-  margin: 20px 0;
-}
+
 </style>

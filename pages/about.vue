@@ -1,20 +1,16 @@
 <template>
   <div>
-    <h2>About</h2>
-    <p>This is the About page</p>
+    <h2 class="mb-20 text-4xl">About</h2>
+    <p class="mb-7">This is the About page</p>
   </div>
 </template>
 
 <script setup>
-
+  useHead({
+    title: 'AfrikHubTours | About',
+  });
 </script>
 
 <style scoped>
-h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-p {
-  margin: 20px 0;
-}
+
 </style>
