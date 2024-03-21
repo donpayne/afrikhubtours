@@ -7,7 +7,7 @@
 
 <script setup>
   useHead({
-    title: 'AfrikHubTours | About',
+    title: 'Heart of Africa Adventures | About',
   });
 </script>
 

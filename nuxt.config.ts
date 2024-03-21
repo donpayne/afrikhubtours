@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'AfrikHubTours',
+      title: 'Heart of Africa Adventures',
       meta: [
         {
           charset: 'utf-8',
@@ -47,6 +47,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
+    '@nuxt/content',
   ],
   css: [
     '~/assets/css/main.css'
